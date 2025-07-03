@@ -14,3 +14,7 @@ hướng dẫn build:
 - cài đặt thư viện cần thiết: pip install -r requirements.txt
 - bản 1 file .exe:  pyinstaller --onefile --noconsole  --add-data "ReadFile.ico;." --add-data "ReadFile.png;." qz_cert_tray_helper.py
 - bản 1 file .exe và folder tài nguyên: pyinstaller --noconsole --onedir --icon=ReadFile.ico --add-data "ReadFile.ico;." qz_cert_tray_helper_v2.py
+
+app sẽ cung cấp 2 api: chỉ cần app bạn gọi api tới "http://localhost:5000"
+- "/publick-key": lấy thông tin public key từ file config
+- "/sign": lấy signature cho qztray sign thông tin gửi tới máy để in
