@@ -16,5 +16,5 @@ hướng dẫn build:
 - bản 1 file .exe và folder tài nguyên: pyinstaller --noconsole --onedir --icon=ReadFile.ico --add-data "ReadFile.ico;." qz_cert_tray_helper_v2.py
 
 app sẽ cung cấp 2 api: chỉ cần app bạn gọi api tới "http://localhost:5000"
-- "/publick-key": lấy thông tin public key từ file config
+- "/public-key": lấy thông tin public key từ file config
 - "/sign": lấy signature cho qztray sign thông tin gửi tới máy để in
